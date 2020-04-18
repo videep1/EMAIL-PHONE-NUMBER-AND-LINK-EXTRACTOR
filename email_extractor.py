@@ -6,7 +6,7 @@ import re
 
 email_regex = re.compile(r"[\w\.-]+@[\w\.-]+")
 phone_num_regex = re.compile(r'\d\d\d.\d\d\d.\d\d\d\d')
-# url_regex = re.compile(r"https?://(www\.)?(\w+)(\.\w+)")
+
 url_regex_https = re.compile(r"https?://www\.?\w+\.\w+")
 url_regex = re.compile(r"http?://www\.?\w+\.\w+")
 
@@ -99,10 +99,7 @@ button_2.grid(row=5,column=1,padx=10,pady=10)
 button_3=Button(tab1,text="Clear Result", command=clear_display_result,width=10,bg='#03A9F4',fg='#fff')
 button_3.grid(row=5,column=0,padx=10,pady=10)
 
-# variable = StringVar()
-# variable.set("URL/HTTP")
-# choice_button = OptionMenu(tab1,variable,"URL/HTTP","URL/HTTPS")
-# choice_button.grid(row=6,column=1)
+
 
 # Display Screen For Result
 tab1_display = ScrolledText(tab1,height=10)
@@ -129,10 +126,6 @@ button2.grid(row=5,column=1,padx=10,pady=10)
 button3=Button(tab2,text="Clear Result", command=clear_display_result_url,width=10,bg='#03A9F4',fg='#fff')
 button3.grid(row=5,column=0,padx=10,pady=10)
 
-# variable = StringVar()
-# variable.set("URL/HTTP")
-# choice_button = OptionMenu(tab1,variable,"URL/HTTP","URL/HTTPS")
-# choice_button.grid(row=6,column=1)
 
 # Display Screen For Result
 tab2_display = ScrolledText(tab2,height=10)
